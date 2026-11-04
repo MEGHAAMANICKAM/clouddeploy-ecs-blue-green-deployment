@@ -27,3 +27,5 @@ crash.log
 .idea/
 .DS_Store
 Thumbs.db
+
+*.tsbuildinfo
