@@ -9,7 +9,7 @@ copy .env.example .env
 docker compose up --build
 ```
 
-Open the dashboard at `http://localhost:3000`. The Flask API is available at `http://localhost:8080`.
+Open the dashboard at `http://localhost:3001`. The Flask API is available at `http://localhost:8083`.
 
 To demonstrate a different application version:
 
@@ -17,7 +17,7 @@ To demonstrate a different application version:
 APP_VERSION=2.0.0 docker compose up --build
 ```
 
-The frontend reads its API base URL from `VITE_API_BASE_URL`. Use `/api` for Docker Compose (the Nginx container proxies it to the backend), or `http://localhost:8080/api` when running the frontend with Vite and the Flask server locally.
+The frontend reads its API base URL from `VITE_API_BASE_URL`. Use `/api` for Docker Compose (the Nginx container proxies it to the backend), or `http://localhost:8083/api` when running the frontend with Vite and the Flask server locally.
 
 ## Run without Docker
 
